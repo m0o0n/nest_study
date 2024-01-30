@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { StackModule } from './stack/stack.module';
 import { UserStackModule } from './user-stack/user-stack.module';
+import { TestModule } from './test/test.module';
 
 @Module({
   imports: [
@@ -27,7 +28,8 @@ import { UserStackModule } from './user-stack/user-stack.module';
       inject: [ConfigService]
     }),
     StackModule,
-    UserStackModule
+    UserStackModule,
+    TestModule
   ],
   controllers: [AppController],
   providers: [AppService],
